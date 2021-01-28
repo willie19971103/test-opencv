@@ -8,6 +8,7 @@ import numpy as np
 def draw_circle(event,x,y,flags,param):
     if event==cv2.EVENT_LBUTTONDBLCLK:
         cv2.circle(img,(x,y),100,(255,0,0),-1)
+        # cv2.event
 
 # 创建图像与窗口并将窗口与回䖲函数绑定
 img=np.zeros((512,512,3),np.uint8)
