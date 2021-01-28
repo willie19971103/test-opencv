@@ -8,11 +8,12 @@ img = cv2.imread('test.jpg',1)#彩色
 
 b=cv2.imread('test.jpg',1)
 b=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)#BGR轉換RGB
+#建造兩個區塊
 img1=b[0:1000,0:1000]
 img2=b[3000:4000,0:1000]
 
-#圖像混和
-dst=cv2.addWeighted(img1,0.5,img2,0.5,0)
+#區塊混和
+dst=cv2.addWeighted(img1,0.5,img2,0.5,0)##混和比例
 b[3000:4000,0:1000]=dst
 
 
