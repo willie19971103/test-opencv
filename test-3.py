@@ -29,8 +29,8 @@ cv2.circle(img,(200,200), 150, (100,100,100) ,3)
 # cv2.polylines(image,[coordinates],Boolean(True if closed polygon),(0,0,0))                   #Color is by default black
 # 設定多邊形頂點座標
 pts = np.array([[100, 100], [200,100], [200,200], [100,200]], np.int32)
-# 將座標轉為 (頂點數量, 1, 2) 的陣列
-pts = pts.reshape((-1, 1, 2))
+# # 將座標轉為 (頂點數量, 1, 2) 的陣列>>>這個不用
+# pts = pts.reshape((-1, 1, 2))
 # 繪製多邊形
 cv2.polylines(img, [pts], True, (255, 255, 0), 3)
 
