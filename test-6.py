@@ -1,10 +1,9 @@
+# 剪貼相簿
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
-# img = cv2.imread('test.jpg',cv2.IMREAD_COLOR)#彩色
+
 img = cv2.imread('test.jpg',1)#彩色
-# img = cv2.imread('test.jpg',0)#黑白
-# img = cv2.imread('test.jpg',cv2.IMREAD_GRAYSCALE)#黑白色
 
 # img[100,100]==[0,0,0] 將[100,100]轉換為[0,0,0]
 print(img.shape)#讀取圖案的大小(4000,6000,3)#3為顏色種數RGB
