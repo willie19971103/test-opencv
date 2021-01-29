@@ -2,13 +2,14 @@
 
 import cv2 
 import numpy as np
+#抓視頻
 cap=cv2.VideoCapture(0)
 while 1:
-#获取每一帧 
+#從視頻中抓出每一帧 
     ret,frame=cap.read()
-#换到HSV 
+#换到HSV空間 
     hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
-#定蓝色的值 
+#設定HSV閥值 
     lower_blue=np.array([50,50,50]) 
     upper_blue=np.array([130,255,255])
 #根据值构建掩模 
