@@ -25,6 +25,9 @@ for i, d in enumerate(face_rects):
   # 以方框標示偵測的人臉
   cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 4, cv2.LINE_AA)
 
+
+cv2.namedWindow('Face Detection',cv2.WINDOW_NORMAL)#可調整視窗大小
+
 # 顯示結果
 cv2.imshow("Face Detection", img)
 
